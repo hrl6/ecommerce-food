@@ -187,6 +187,7 @@ footer {
     }
     img {
         max-height: 60vh;
+        width: 100%;
     }
     .slider p {
         width: 100%;
@@ -277,9 +278,6 @@ footer {
     .content .text p {
         font-size: 1.2em;
         margin-bottom: 1vh;
-    }
-    img {
-        width: 100%;
     }
     footer nav {
         flex-direction: column-reverse;
