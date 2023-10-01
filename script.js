@@ -1,3 +1,12 @@
+const menuToggle = document.querySelector(`.toggle`);
+const navigation = document.querySelector(`.navigator`);
+
+menuToggle.addEventListener(`click`, () => {
+    menuToggle.classList.toggle(`active`);
+    navigation.classList.toggle(`active`);
+});
+
+
 const slides = document.querySelectorAll(`.slides`);
 const next = document.querySelector(`.next`);
 const prev = document.querySelector(`.previous`);
