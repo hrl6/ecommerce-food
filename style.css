@@ -278,8 +278,15 @@ footer {
         font-size: 1.2em;
         margin-bottom: 1vh;
     }
+    img {
+        width: 100%;
+    }
     footer nav {
         flex-direction: column-reverse;
         gap: 5vh;
+    }
+    .social-media {
+        display: flex;
+        gap: 20px;
     }
 }
