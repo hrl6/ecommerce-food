@@ -62,7 +62,6 @@ header {
         font-size: 4em;
         font-weight: 500;
         margin-bottom: 1.5vh;
-
     }
     .content .text h2 span {
         font-weight: bold;
@@ -172,97 +171,115 @@ footer {
 
 
 
-    @media (max-width: 992px) {
-        .main-menu {
-            padding: 3vh 6vw;
-        }
-
-        .content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 20vh 6vw 10vh 6vw;
-        }
-        .slider {
-            margin: 0;
-        }
-        img {
-            max-height: 60vh;
-        }
-        .slider p {
-            width: 100%;
-        }
-
-        footer {
-            position: relative;
-        }
-        footer nav {
-            padding: 0vh 6vw;
-        }
-
-
-        .navigator {
-            display: none;
-        }
-        .navigator.active {
-            position: fixed;
-            top: 0;
-            right: 0;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            background: #e0865c;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .navigator.active ul {
-            font-size: 1.2em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .toggle {
-            position: relative;
-            width: 25px;
-            height: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 2;
-            cursor: pointer;
-        }
-        .toggle.active {
-            position: fixed;
-            right: 6vw;
-            z-index: 3;
-        }
-        .toggle::before {
-            background: #fff;
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            box-shadow: 0 16px 0 #fff;
-            transform: translateY(-8px);
-            transition: 0.25s ease;
-        }
-        .toggle.active::before {
-            transform: translateY(0px) rotate(45deg);
-            box-shadow: 0 0 0 #fff;
-        }
-        .toggle::after {
-            background: #fff;
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            transition: 0.25s ease;
-        }
-        .toggle.active::after {
-            transform: rotate(-45deg);
-            box-shadow: 0 0 0 #fff;
-        }
-
+@media (max-width: 992px) {
+    .main-menu {
+        padding: 3vh 6vw;
     }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20vh 6vw 10vh 6vw;
+    }
+    .slider {
+        margin: 0;
+    }
+    img {
+        max-height: 60vh;
+    }
+    .slider p {
+        width: 100%;
+    }
+
+    footer {
+        position: relative;
+    }
+    footer nav {
+        padding: 0vh 6vw;
+    }
+
+
+    .navigator {
+        display: none;
+    }
+    .navigator.active {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: #e0865c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigator.active ul {
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toggle {
+        position: relative;
+        width: 25px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .toggle.active {
+        position: fixed;
+        right: 6vw;
+        z-index: 3;
+    }
+    .toggle::before {
+        background: #fff;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        box-shadow: 0 16px 0 #fff;
+        transform: translateY(-8px);
+        transition: 0.25s ease;
+    }
+    .toggle.active::before {
+        transform: translateY(0px) rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+    .toggle::after {
+        background: #fff;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        transition: 0.25s ease;
+    }
+    .toggle.active::after {
+        transform: rotate(-45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+
+}
+
+@media (max-width: 490px) {
+    .content {
+        padding-bottom: 3vh;
+    }
+    .content .text h2 {
+        font-size: 3.2em;
+        margin-top: 6vh;
+    }
+    .content .text p {
+        font-size: 1.2em;
+        margin-bottom: 1vh;
+    }
+    footer nav {
+        flex-direction: column-reverse;
+        gap: 5vh;
+    }
+}
